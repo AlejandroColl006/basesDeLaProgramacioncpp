@@ -7,7 +7,7 @@ int suma (int a, int b) {
 
 int main() {
     int a = 2; //Variable local
-    std::cout << "El resultado de la suma es: " << suma(2, b);
+    std::cout << "El resultado de la suma es: " << suma(a, b);
 
-    return a+b;
+    return 0;
 }
