@@ -1,13 +1,25 @@
 #include <iostream>
-#include <string>
-int b = 5; //Variable global (incluida fuera del main porque afecta a todo el código.
-int suma (int a, int b) {
-    return a+b;
+
+int variableGlobal = 20;
+
+void funcionLocal() {
+
+    int variableLocal = 10;
+    std::cout << "Dentro de la funcion funcionLocal:" << std::endl;
+    std::cout << "Variable local: " << variableLocal << std::endl;
+    std::cout << "Variable global: " << variableGlobal << std::endl; // Accediendo a la variable global
 }
 
 int main() {
-    int a = 2; //Variable local
-    std::cout << "El resultado de la suma es: " << suma(a, b);
+    std::cout << "Dentro de la funcion main:" << std::endl;
+    std::cout << "Variable global: " << variableGlobal << std::endl;
+
+
+    funcionLocal();
+
+
+    std::cout << "Fin de la funcion main." << std::endl;
 
     return 0;
 }
+
