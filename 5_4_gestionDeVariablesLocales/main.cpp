@@ -10,9 +10,9 @@ int main() {
 
     mostrarLaVariableLocal();
 
-    std::cout << "Saliendo de la función mostrarLaVariableLocal" << std::endl;
+    std::cout << "Se termina de ejecutar la funcion de mostraLaVariableLocal " << std::endl;
 
-    // Aquí no se puede acceder a variableLocal porque ha sido destruida
+
     std::cout << "Termina la ejecucion del programa" << std::endl;
 
     return 0;
